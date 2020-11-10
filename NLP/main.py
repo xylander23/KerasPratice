@@ -13,4 +13,4 @@ if __name__ == "__main__":
     x_test = preprocessing.sequence.pad_sequences(x_test, maxlen=maxlen)
 
     model = SimpleNN()
-    model.train(x_train, y_train)
+    model.train(x_train, y_train, maxlen)
